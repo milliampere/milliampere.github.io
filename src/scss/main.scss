@@ -30,7 +30,6 @@ body, textarea, input {
 	box-shadow: border-box;
 }
 
-
 // typography
 h1, h2, h3, h4, h5, h6 {
 	font-family: $heading-font;
@@ -51,7 +50,6 @@ p {
 	line-height: 1.3;
 }
 
-
 h3 {
 	font-weight: 700;
 	line-height: 1.1em;
@@ -59,7 +57,6 @@ h3 {
 }
 
 //links
-
 a:link {
     text-decoration: none;
     color: $grey;
@@ -79,7 +76,6 @@ a:hover {
 a:active {
     text-decoration: underline;
 }
-
 
 // utility
 .highlight {
@@ -156,8 +152,6 @@ a:active {
   } 
 }
 
-
-
 /*About*/
 .about-box {
   display: flex;
@@ -188,7 +182,6 @@ a:active {
     width: 99%;
   }
 }
-
 
 /*Project*/
 .project-container {
@@ -293,8 +286,6 @@ a:active {
 }
 
 
-  
-/* Contact */
 .contact-info p {
   margin: 0;
   padding: 0;
@@ -312,5 +303,3 @@ a:active {
     transform: scale(1.1);
   }
 }
-
-
