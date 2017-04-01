@@ -7,139 +7,66 @@
 	<title>Portfolio - Camilla Tranberg</title>
 
 	<!-- Custom style -->
-	<link rel="stylesheet" href="dist/css/main.css">
+	<link rel="stylesheet" href="dist/css/main.min.css">
 
 	<!-- Icons -->
 	<script src="https://use.fontawesome.com/d72fd965ba.js"></script>
+
+	<!-- Favicon -->
+	<link rel="icon" href="dist/images/favicon.png">
 </head>
 <body>
 
-<header class="hero">
-	<!-- <h1 class="text-uppercase">Camilla Tranberg</h1> -->
-	<h2 class="highlight hero-text font-alt">Blivande frontendutvecklare söker praktikplats på spännande företag</h2>
-</header>
-
-<main class="wrapper">
-	<div class="frame">
-
-		<h2 class="uppercase text-center">Om mig</h2>
-		<div class="about-box">
-			<div class="about-description"><p><br>Jag heter <b>Camilla Tranberg</b> och läser frontendutveckling på Nackademins yrkeshögskola. Vi har hittills läst kurser i <b>HTML/CSS</b>, <b>JavaScript</b>, <b>programmeringsmetodik</b>, <b>bildbehandling</b> samt <b>kommunikation och projektmetoder</b>. Till hösten är det dags för praktik! </p>
-			<p>Praktiken är perioden från vecka 41 till 50. Här finns <a href="http://studentportal.nackademin.se/pluginfile.php/44747/mod_resource/content/1/L_LIA1.pdf" target="_blank">kursplanen</a>. Titta gärna här nedan på projekt jag har gjort.</p></div>
-			<div class="about-figure"><figure>
-				<img src="images/camilla.jpg" class="about-img" alt="Camilla Tranberg">
-				<figcaption>Camilla Tranberg</figcaption>
-			</figure> 
-			</div> 
-		</div>
-
-	<!-- PROJEKT -->
-	<h2 class="uppercase text-center">Projekt</h2>
-
-		<!-- To-do -->
-	<div class="project-container">
-		<div class="project-box">
-			<div class="project-description">
-        <p>En att göra-lista i Vanilla JS <br> <br>
-        <a target="_blank" href="https://milliampere.github.io/camilla_tranberg_todo">Besök webbsida</a> <br>
-        <a target="_blank" href="https://github.com/milliampere/camilla_tranberg_todo">Gå till repo</a>
-				</p>
-		  </div>
-		  <figure class="img-figure">
-		    <!-- <figcaption>November 2016</figcaption> -->
-		    <img class="project-img" src="images/todo.png" alt="">
-		  </figure>
-		</div>
-		<div class="project-right"><h3>November 2016</h3></div>
-	</div>
-
-		<!-- Foodie -->
-	<div class="project-container">
-		<div class="project-box">
-			<div class="project-description">
-        <p>Slumpa fram recept, gjord med Vanilla JS <br> <br>
-        <a target="_blank" href="https://milliampere.github.io/camilla_tranberg_foodie">Besök webbsida</a> <br>
-        <a target="_blank" href="https://github.com/milliampere/camilla_tranberg_foodie">Gå till repo</a>
-				</p>
-		  </div>
-		  <figure class="img-figure">
-		    <!-- <figcaption>November 2016</figcaption> -->
-		    <img class="project-img" src="images/foodie.png" alt="">
-		  </figure>
+	<header>
+		<div class="header-hero">
+			<div class="frow items-center">
+			    <div class="col-xs-1-1 col-sm-3-4 col-md-3-4">
+			    	<div class="header-content">
+				    	<span class="header-hero-text">Blivande frontendutvecklare söker praktikplats på spännande företag</span>
+							<nav class="header-navigation"><!-- start of main menu -->
+								<ul>
+									<li id="nav-about"><a href="#om-mig">Om mig</a></li>
+									<li id="nav-projects"><a href="#projekt">Projekt</a></li> 
+									<li id="nav-contact"><a href="#kontakta mig">Kontakta mig</a></li> 
+								</ul>
+							</nav><!-- end of main menu -->
+						</div>
+			    </div>
+			    <div class="col-xs-1-4 col-sm-1-4 col-md-1-4 hidden-xs">
+			    	<img src="dist/images/camilla.jpg" class="header-avatar" alt="Camilla Tranberg">
+			    </div>
 			</div>
-			<div class="project-left"><h3>November 2016</h3></div>
 		</div>
+	</header> <!-- end of header -->
 
-	<!-- Plantify -->
-	<div class="project-container">
-		<div class="project-box">
-			<div class="project-description">
-        <p>En webbplats "Plantify" skapad med HTML och CSS. <br> <br>
-        <a target="_blank" href="https://milliampere.github.io/plantify">Besök webbsida</a> <br>
-        <a target="_blank" href="https://github.com/milliampere/plantify">Gå till repo</a>
-				</p>
-		  </div>
-		  <figure class="img-figure">
-		    <!-- <figcaption>December 2017</figcaption> -->
-		    <img class="project-img" src="images/plantify.png" alt="">
-		  </figure>
-			</div>
-			<div class="project-right"><h3>December 2017</h3></div>
-	</div>
 
-		<!-- Vanilla Webdesign -->
-	<div class="project-container">
-		<div class="project-box">
-			<div class="project-description">
-        <p>Vi fick i uppdrag att skapa en webbplats till en fiktiv webbyrå. <br> <br>
-        <a target="_blank" href="https://milliampere.github.io/vanilla">Besök webbsida</a> <br>
-        <a target="_blank" href="https://github.com/milliampere/vanilla">Gå till repo</a>
-				</p>
-		  </div>
-		  <figure class="img-figure">
-		    <!-- <figcaption>Januari 2017</figcaption> -->
-		    <img class="project-img" src="images/vanilla-full.png" alt="">
-		  </figure>
+	<!-- wraps the main content of the page and stops from stretching too wide on large displays (frow-container) -->
+	<main class="frow-container"> 
+		<div id="content" class="animate-content">
+			<div class="text-center"><h2 id="heading">Projekt</h2></div>
+			<div id="contentList" class="frow gutters">
 			</div>
-			<div class="project-left"><h3>Januari 2017</h3></div>
 		</div>
+	</main> <!-- end of container -->
 
-		<!-- Movie Database -->
-	<div class="project-container">
-		<div class="project-box">
-			<div class="project-description">
-        <p>En databas över filmer där man kan filtrera på genre, år och betyg. <br><br>
-        <a target="_blank" href="https://milliampere.github.io/movie-database/index.html">Besök webbsida</a> <br>
-        <a target="_blank" href="https://github.com/milliampere/movie-database">Gå till repo</a>
-				</p>
-		  </div>
-		  <figure class="img-figure">
-		    <!-- <figcaption>Mars 2017</figcaption> -->
-		    <img class="project-img" src="images/movie.png" alt="">
-		  </figure>
+
+	<!-- Footer -->
+	<footer>
+		<div class="footer-hero"></div>
+		<div class="footer-content">
+			<div class="frow items-center">
+
+				<a href="https://www.linkedin.com/in/camilla-tranberg-aa868812a" target="_blank"><span class="fa fa-linkedin-square fa-2x" aria-hidden="true"></span></a>
+				<a href="mailto:camilla.tranberg@gmail.com?Subject=Praktikplats" target="_top"><span class="fa fa-envelope fa-2x" aria-hidden="true"></span></a>
+				<a href="https://github.com/milliampere" target="_blank"><span class="fa fa-github fa-2x" aria-hidden="true"></span></a>
+
 			</div>
-			<div class="project-right"><h3>Mars 2017</h3></div>
 		</div>
-
-	<!-- Contact -->
-	<div class="contact-box">
-		<h2 class="uppercase">Kontakta mig</h2>
-		<section class="contact-info text-center">
-		<p>Jag hoppas att höra från er!</p>
-			<p><a href="mailto:camilla.tranberg@gmail.com?Subject=Praktikplats" target="_top">camilla.tranberg @ gmail</a></p>
-		</section>
-		<section class="contact-icones text-center">
-			<a href="https://www.linkedin.com/in/camilla-tranberg-aa868812a" target="_blank"><span class="fa fa-linkedin-square fa-2x" aria-hidden="true"></span></a>
-			<a href="mailto:camilla.tranberg@gmail.com?Subject=Praktikplats" target="_top"><span class="fa fa-envelope fa-2x" aria-hidden="true"></span></a>
-			<a href="https://github.com/milliampere" target="_blank"><span class="fa fa-github fa-2x" aria-hidden="true"></span></a>
-		</section>
-	</div>
+	</footer>
 
 
-	</div> <!-- end of frame -->	
-</main> <!-- end of wrapper -->
-
-
+	<!-- Scripts -->
+	<script src="dist/js/main.js"></script>
 
 </body>
 </html>
