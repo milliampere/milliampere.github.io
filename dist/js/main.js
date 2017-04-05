@@ -8,28 +8,28 @@ document.addEventListener('DOMContentLoaded', function (event) {
 	document.getElementById('nav-projects').addEventListener('click', Module.appendProjects);
 	document.getElementById('nav-contact').addEventListener('click', Module.appendContactMe);
 
-	Module.appendProjects();
+	Module.appendAboutMe();
 });
 
 var Module = function () {
 
 	var projects = [{
 		name: "Vanilla Web Design",
-		description: "Vi fick i uppdrag att skapa en webbplats till en fiktiv webbyrå.",
+		description: "Vi fick i uppdrag att skapa en webbplats till en fiktiv webbyrå. Här är det förutom HTML och CSS fokus på arbetsprocessen och hur vi kan jobba enligt Scrum. ",
 		date: "Januari 2017",
 		repository: "vanilla",
 		image: "vanilla-thin.jpg",
 		color: "#aba599"
 	}, {
 		name: "Movie Database",
-		description: "En databas över filmer där man kan filtrera på genre, år och betyg.",
+		description: "En sida om filmer där man kan filtrera på genre, år och betyg samt lägga till och redigera filmer. Fokus är designmönster och koden är skriven enligt Revealing Module Pattern. ",
 		date: "Mars 2017",
 		repository: "movie-database",
 		image: "movie-thin.jpg",
 		color: "#9ba874"
 	}, {
 		name: "Trafikinformation i Stockholm",
-		description: "Öppet API",
+		description: "Välj ett öppet API och gör en sida - det här är resultatet. Data hämtas från Trafikverkets API och presenteras på en karta och i textform. ",
 		date: "Mars 2017",
 		repository: "ajax-assignment",
 		image: "trafik-thin.jpg",
@@ -77,7 +77,7 @@ var Module = function () {
 		var contentList = document.getElementById('contentList');
 		var heading = document.getElementById('heading');
 
-		var htmlChunk = '\n\t\t<div class="col-md-1-2">\n\t\t<p>Jag heter <b>Camilla Tranberg</b> och l\xE4ser frontendutveckling p\xE5 Nackademins yrkesh\xF6gskola. Vi har hittills l\xE4st kurser i <b>HTML/CSS</b>, <b>JavaScript</b>, <b>programmeringsmetodik</b>, <b>bildbehandling</b> samt <b>kommunikation och projektmetoder</b>. Till h\xF6sten \xE4r det dags f\xF6r praktik! </p>\n\t\t</div>\n\t\t<div class="col-md-1-2">\n\t\t<p>Praktiken \xE4r perioden fr\xE5n vecka 41 till 50. H\xE4r finns <a href="http://studentportal.nackademin.se/pluginfile.php/44747/mod_resource/content/1/L_LIA1.pdf" target="_blank">kursplanen</a>.</p>\n\t\t</div>';
+		var htmlChunk = '\n\t\t<div class="col-md-1-2">\n\t\t<p>Jag heter <b>Camilla Tranberg</b> och l\xE4ser frontendutveckling p\xE5 Nackademins yrkesh\xF6gskola. Vi har hittills l\xE4st kurser i HTML/CSS, JavaScript, programmeringsmetodik, bildbehandling samt kommunikation och projektmetoder. Till h\xF6sten \xE4r det dags f\xF6r praktik! </p>\n\t\t</div>\n\t\t<div class="col-md-1-2">\n\t\t<p>Fritiden spenderar jag g\xE4rna med mina vinthundar, antingen p\xE5 kappl\xF6pningsbanan eller i skogen. Jag sjunger i k\xF6r och tr\xE4nar yoga. \xD6vrigt tid hittar du mig framf\xF6r datorn! </p>\n\t\t</div>';
 
 		contentList.innerHTML = htmlChunk;
 		heading.innerHTML = "Om mig";

@@ -1,8 +1,6 @@
 @import '../../node_modules/frow/sass/frow';
 
-@import url("https://fonts.googleapis.com/css?family=Sansita");
-@import url("https://fonts.googleapis.com/css?family=Source-Sans-Pro");
-@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url("https://fonts.googleapis.com/css?family=Sansita|Source-Sans-Pro|Merriweather");
 
 // fonts
 $heading-font: 'Sansita', Georgia, sans-serif;
@@ -15,6 +13,7 @@ $highlight: rgba(250, 250, 0, 0.7);
 $link-color: #642525;
 $grey: #343434;
 $turkos: #50a5a8;
+$red: #8c1e1e;
 
 // universal
 html, body {
@@ -44,11 +43,20 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
+.heading {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  color: #8c1e1e;
+}
 
 //links
 a {
   text-decoration: none;
   color: $grey;
+
+  &:link {
+    text-decoration: none;
+  }
 
   &:hover{
     text-decoration: underline;
@@ -87,9 +95,9 @@ a {
   background-position: 80% 30%;
   background-color: rgba(0, 0, 0, 0.3);
   background-blend-mode: overlay;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   color: black; 
-  height: 300px;
+  height: 220px;
 }
 
 .header-content {
@@ -97,7 +105,7 @@ a {
 }
 
 .header-hero-text {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   line-height: 1.4;
   font-family: $font-alt;
   text-transform: none;
@@ -105,6 +113,7 @@ a {
   display: inline;                                      // fix side padding 
   box-shadow: 8px 0 0 $highlight, -8px 0 0 $highlight;  // fix side padding
   opacity: 0.8;
+  color: #000;
 }
 
 .header-navigation {
@@ -112,8 +121,22 @@ a {
   letter-spacing: 2px;
   font-family: $heading-font;
   margin-top: 1rem;
-  color: #FFF;
 }
+
+.header-navigation li {
+  display: inline;
+  padding-right: 1rem;
+}
+
+.header-navigation ul {
+  padding-top: 3rem;
+}
+.header-navigation a {
+  color: #000;
+  font-size: 1.1rem;
+}
+
+
 
 
 /*********************
@@ -125,18 +148,19 @@ a {
   margin-bottom: 1.5rem;
 }
 
+
+// To display on hover
 .project-media {
   position: absolute;
   z-index: 1;
-  opacity: 0;
+  opacity: 0.08;
   transition: all, 0.1s, ease-in-out;
   &:hover {
       transition: all, 0.1s, ease-in-out;
-      opacity: 0.99;
+      opacity: 1;
   };
 }
 
-// Styling the picture
 .project-media img {
   width: 100%;
   min-height: 200px;
@@ -148,9 +172,7 @@ a {
   cursor: pointer;
 }
 
-// To display on hover
 .project-description {
-
     top: 0;
     width: 100%;
     height: 450px;
@@ -162,7 +184,6 @@ a {
     padding: 0 2rem;
 
 }
-
 
 /*********************
  *      CONTACT      *
@@ -198,7 +219,7 @@ a {
 }
 
 .footer-content {
-  height: 200px;
+  height: 80px;
   background-color: $highlight;
 }
 
