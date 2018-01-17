@@ -77,7 +77,7 @@ var Module = function () {
 		var contentList = document.getElementById('contentList');
 		var heading = document.getElementById('heading');
 
-		var htmlChunk = '\n\t\t<div class="col-md-1-2">\n\t\t<p>Jag heter <b>Camilla Tranberg</b> och l\xE4ser frontendutveckling p\xE5 Nackademins yrkesh\xF6gskola. Vi har hittills l\xE4st kurser i HTML/CSS, JavaScript, programmeringsmetodik, bildbehandling samt kommunikation och projektmetoder. Till h\xF6sten \xE4r det dags f\xF6r praktik! </p>\n\t\t</div>\n\t\t<div class="col-md-1-2">\n\t\t<p>Fritiden spenderar jag g\xE4rna med mina vinthundar, antingen p\xE5 kappl\xF6pningsbanan eller i skogen. Jag sjunger i k\xF6r och tr\xE4nar yoga. \xD6vrigt tid hittar du mig framf\xF6r datorn! </p>\n\t\t</div>';
+		var htmlChunk = '\n\t\t<div class="col-md-1-2">\n\t\t<p>Jag heter <b>Camilla Tranberg</b> och l\xE4ser frontendutveckling p\xE5 Nackademins yrkesh\xF6gskola. Vi har l\xE4st kurser i HTML/CSS, JavaScript, programmeringsmetodik, bildbehandling samt kommunikation och projektmetoder. Till v\xE5ren \xE4r det dags f\xF6r praktik! </p>\n\t\t</div>\n\t\t<div class="col-md-1-2">\n\t\t<p>Fritiden spenderar jag g\xE4rna med min vinthund - antingen p\xE5 kappl\xF6pningsbanan eller i skogen. Jag sjunger i k\xF6r och tr\xE4nar yoga. \xD6vrigt tid hittar du mig framf\xF6r datorn! </p>\n\t\t</div>';
 
 		contentList.innerHTML = htmlChunk;
 		heading.innerHTML = "Om mig";

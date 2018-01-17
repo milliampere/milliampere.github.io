@@ -72,10 +72,10 @@ const Module  = (function() {
 		var htmlChunk = 
 		`
 		<div class="col-md-1-2">
-		<p>Jag heter <b>Camilla Tranberg</b> och läser frontendutveckling på Nackademins yrkeshögskola. Vi har hittills läst kurser i HTML/CSS, JavaScript, programmeringsmetodik, bildbehandling samt kommunikation och projektmetoder. Till hösten är det dags för praktik! </p>
+		<p>Jag heter <b>Camilla Tranberg</b> och läser frontendutveckling på Nackademins yrkeshögskola. Vi har läst kurser i HTML/CSS, JavaScript, programmeringsmetodik, bildbehandling samt kommunikation och projektmetoder. Till våren är det dags för praktik! </p>
 		</div>
 		<div class="col-md-1-2">
-		<p>Fritiden spenderar jag gärna med mina vinthundar, antingen på kapplöpningsbanan eller i skogen. Jag sjunger i kör och tränar yoga. Övrigt tid hittar du mig framför datorn! </p>
+		<p>Fritiden spenderar jag gärna med min vinthund - antingen på kapplöpningsbanan eller i skogen. Jag sjunger i kör och tränar yoga. Övrigt tid hittar du mig framför datorn! </p>
 		</div>`;
 
 		contentList.innerHTML = htmlChunk;

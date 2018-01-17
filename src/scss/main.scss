@@ -1,10 +1,10 @@
 @import '../../node_modules/frow/sass/frow';
 
-@import url("https://fonts.googleapis.com/css?family=Sansita|Source-Sans-Pro|Merriweather");
+@import url("https://fonts.googleapis.com/css?family=Sansita|Open+Sans|Merriweather");
 
 // fonts
-$heading-font: 'Sansita', Georgia, sans-serif;
-$paragraf-font: 'Source Sans Pro', Georgia, sans-serif;
+$heading-font: 'Sansita', sans-serif;
+$paragraf-font: 'Open Sans', sans-serif;
 $font-alt: 'Merriweather', serif;
 
 // colors
@@ -19,8 +19,7 @@ $red: #8c1e1e;
 html, body {
   margin: 0;
   font: 20px/1.4 $paragraf-font;
-  color: #57676e;
-  webkit-font-smoothing: antialiased;
+  color: #4b4a4a;
   background-color: $background-color; 
 }
 
@@ -44,10 +43,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .heading {
-  margin-top: 3rem;
-  margin-bottom: 1rem;
+  margin-top: 3.5rem;
+  margin-bottom: 1.5rem;
   color: #8c1e1e;
 }
+
+@media screen and (max-width: 599px) {
+  .heading {
+    margin-top: 7rem
+  }
+}
+
 
 //links
 a {
@@ -79,14 +85,21 @@ a {
  *********************/
 // Styles the round picture in the top right corner
 .header-avatar {
-    border-radius: 50%;
-    max-width: 100%;
-    height: auto;
-    max-width: 200px;
-    height: auto;
-    border: 2px solid #000;
-    float:right;
-    margin: 1rem 2rem 0 0;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  border-radius: 50%;
+  max-width: 100%;
+  max-width: 200px;
+  height: auto;
+  border: 2px solid #000;
+}
+
+.header-avatar-mail {
+  position: absolute;
+  top: 1.2rem;
+  right: 12.7rem;
+  height: auto;
 }
 
 .header-hero {
@@ -111,16 +124,19 @@ a {
   text-transform: none;
   background-color: $highlight;
   display: inline;                                      // fix side padding 
-  box-shadow: 8px 0 0 $highlight, -8px 0 0 $highlight;  // fix side padding
+  box-shadow: 6px 0 0 $highlight, -6px 0 0 $highlight;  // fix side padding
   opacity: 0.8;
   color: #000;
 }
 
 .header-navigation {
+  position: absolute;
+  top: 5rem;
+  bottom: 5rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-family: $heading-font;
-  margin-top: 1rem;
+  margin-top: 7rem;
 }
 
 .header-navigation li {
@@ -129,14 +145,22 @@ a {
 }
 
 .header-navigation ul {
-  padding-top: 3rem;
+  padding-bottom: 1rem;
 }
 .header-navigation a {
   color: #000;
   font-size: 1.1rem;
 }
 
-
+@media screen and (max-width: 599px) {
+  .header-hero-text {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+  .header-navigation li {
+    display: block;
+  }
+}
 
 
 /*********************
@@ -173,16 +197,15 @@ a {
 }
 
 .project-description {
-    top: 0;
-    width: 100%;
-    height: 450px;
-    color: #000;   
-    display: flex;
-    flex-direction: column;
-    justify-content: center;  
-    align-items: flex-start;
-    padding: 0 2rem;
-
+  top: 0;
+  width: 100%;
+  height: 450px;
+  color: #000;   
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: flex-start;
+  padding: 0 2rem;
 }
 
 /*********************
